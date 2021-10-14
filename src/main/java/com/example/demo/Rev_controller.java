@@ -9,7 +9,7 @@ public class Rev_controller {
 
     @GetMapping("/api/rev")
     public String index(@RequestParam("rev") String rev) {
-        return new StringBuilder(rev).reverse().toString();
+        return (new StringBuilder(rev).reverse().toString());
     }
 
 }
