@@ -9,7 +9,7 @@ public class Rev_controller {
 
     @GetMapping("/api/rev")
     public String index(@RequestParam String rev) {
-        return "Greetings from Spring Boot!";
+        return new StringBuilder(rev).reverse().toString();
     }
 
 }
