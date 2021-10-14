@@ -7,9 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Rev_controller {
 
+    /**
+     * @param rev - String to reverse
+     * @return reverse String
+     */
     @GetMapping("/api/rev")
+
     public String index(@RequestParam("rev") String rev) {
         return (new StringBuilder(rev).reverse().toString());
     }
-
 }
