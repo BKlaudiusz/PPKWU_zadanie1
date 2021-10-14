@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Rev_controller {
 
-    @GetMapping("/")
+    @GetMapping("/api/rev")
     public String index(@RequestParam String rev) {
         return "Greetings from Spring Boot!";
     }
